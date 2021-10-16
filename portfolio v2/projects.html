@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Killian HABASQUE | Portfolio | Work - About - Contact</title>
+    <meta name="author" content="Killian Habasque">
+    <meta name="description"
+        content="Portfolio de Killian Habasque, étudiant français dans les domaines du web, du design, de la communication, et du graphisme.">
+    <meta name="keywords"
+        content="Killian Habasque, Killian, Habasque, portfolio, etudiant, dut, mmi, metiers, multimedia, internet, communication, audiovisuel, web, developpement, graphisme, webdesign, marketing, infographie, digital, programmation">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/8abf5dc4d2.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="body-project">
+
+    <style>
+        .transition{
+		position: fixed;
+		width:100%;
+		height:0%;
+		background: wheat;
+		z-index: 1000;
+		pointer-events: none;
+		transition : ease-in 0.3s;
+	}
+	.transition.active{
+		height:130%;
+		pointer-events: none;
+	}
+        </style>
+    <div id="transition_page" class=" transition active"></div>
+
+
+
+<!-- HEADER -->
+<header>
+    <nav class="nav">
+        <div class="box one">
+            <ul>
+                <li class="item active"><a class="header-txt" href="index.html">PORTFOLIO</a></li>
+            </ul>
+        </div>
+        <div class="box two">
+            <img class="logo" src="images/logoCut.svg" alt=""  onclick="window.location='index.html';">
+        </div>
+        <div class="box three">
+            <ul class="list-pages">
+                <li class="item"><a class="header-txt" href="projects.html">PROJECTS</a></li>
+                <li class="item"><a class="header-txt" href="about.html">ABOUT</a></li>
+                <li class="item"><a class="header-txt" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="box four">
+            <div class="menu-open">MENU</div>
+        </div>			
+    </nav>
+</header>
+
+<!-- MENU RESPONSIVE -->
+<div class="nav-container project">
+    <div class="menu-close">CLOSE</div>
+    <div class="menu-name">
+        <li>KILLIAN</li>
+        <li>HABASQUE</li>
+    </div>
+    <nav class="menu">
+        <div class="menu-item">
+            <a href="index.html" class="menu-item-link">PORTFOLIO</a>
+        </div>
+        <div class="bar-menu"></div>
+        <div class="menu-item">
+            <a href="projects.html" class="menu-item-link">PROJECTS</a>
+        </div>
+        <div class="menu-item">
+            <a href="about.html" class="menu-item-link">ABOUT</a>
+        </div>
+        <div class="menu-item">
+            <a href="contact.html" class="menu-item-link">CONTACT</a>
+        </div>
+    </nav>
+</div>
+
+    <section class="section-projects">
+        <div class="behance-texte">
+            <div class="top">
+                <span class="helv">All my</span><span class="slang"> projects</span><br>
+            </div>
+            <div class="bottom">
+                <span class="helv">on</span><span class="slang"> BEHANCE</span><span class="bar">2021</span>
+            </div>
+        </div>
+
+        <div class="behance-button" onclick="window.location='https://www.behance.net/killian-habasque';">
+            <div class="center-polygon">
+                <div class="polygon">
+                    <div id="cta">
+                        <span class="arrow one next "></span>
+                        <span class="arrow two next "></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects-list">
+        <div class="project-preview-wrapper">
+            <div class="project-preview"></div>
+        </div>
+
+        <div class="project">
+            <a class="location-project project-5" onclick="window.location='auchan.html';">
+                <p class="num-project">05</p>
+                <h1 class="name-project">Auchan</h1>
+            </a>
+            <p class="desc-project">DESIGN</p>
+        </div>
+        <div class="project">
+            <a class="location-project project-4" onclick="window.location='balado.html';">
+                <p class="num-project">04</p>
+                <h1 class="name-project">Balado</h1>
+            </a>
+            <p class="desc-project">DEVWEB</p>
+        </div>
+        <div class="project">
+            <a class="location-project project-3" onclick="window.location='portfolio.html';">
+                <p class="num-project">03</p>
+                <h1 class="name-project">Portfolio v1</h1>
+            </a>
+            <p class="desc-project">DEVWEB</p>
+        </div>
+        <div class="project">
+            <a class="location-project project-2" onclick="window.location='poster.html';">
+                <p class="num-project">02</p>
+                <h1 class="name-project">Posters</h1>
+            </a>
+            <p class="desc-project">DESIGN</p>
+        </div>
+        <div class="project">
+            <a class="location-project project-1" onclick="window.location='mmiProjects.html';">
+                <p class="num-project">01</p>
+                <h1 class="name-project">MMI Project</h1>
+            </a>
+            <p class="desc-project">DESIGN</p>
+        </div>
+        <div class="project">
+            <a class="location-project project-0" onclick="window.location='coAutomatisation.html';">
+                <p class="num-project">00</p>
+                <h1 class="name-project">C.O automatisation</h1>
+            </a>
+            <p class="desc-project">DEVWEB</p>
+        </div>
+    </section>
+   
+   
+   
+   
+   
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script/transition.js"></script>
+    <script src="script/script.js"></script>
+
+
+
+
+<script>
+
+//__________________Texte index__________________ 
+var tl = new TimelineMax();
+
+var tl = new TweenMax.staggerFrom(".helv", 2, {
+    opacity: 0,     
+    y: 20,
+    ease: Expo.easeInOut,
+    delay: 0.2
+}, 0.5);
+
+var tl = new TweenMax.staggerFrom(".slang", 2, {
+    opacity: 0,     
+    y: 50,
+    ease: Expo.easeInOut,
+    delay: 0.6
+}, 0.5);
+
+var tl = new TweenMax.staggerFrom(".bar", 2, {
+    opacity: 0,     
+    x: -70,
+    width: 0,
+    fontSize: 0,
+    ease: Expo.easeInOut,
+    delay: 1.5
+});   
+
+var tl = new TweenMax.staggerFrom(".behance-button", 2, {
+    opacity: 0,     
+    scale: 1.3,
+    ease: Expo.easeInOut,
+    delay: 1.5
+});
+
+
+
+</script>
+
+
+
+<!-- LANDING PAGE: APPARITION -->
+<script>
+    //__________________Reveal index__________________ 
+        $(function () {
+            var elements = $(".section-projects").toArray();
+            $(window).scroll(function () {
+                elements.forEach(function (item) {
+                    if ($(this).scrollTop() >= $(item).offset().top - 500) {
+                        $(item).addClass("reveal");
+                    }
+                });
+            });
+            elements.forEach(function (item) {
+                if ($(this).scrollTop() >= $(item).offset().top - 500) {
+                    $(item).addClass("reveal");
+                }
+            });
+        });
+    
+    
+    
+    </script>
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            TweenMax.set(".project-preview", {
+                width: 0
+            });
+
+            var tl = new TimelineLite();
+
+            $(document)
+                .on("mouseover", ".name-project", function (evt) {
+                    tl = new TimelineLite();
+                    tl.to($(".project-preview"), 1, {
+                        width: "600px",
+                        ease: Expo.easeInOut
+                    });
+                })
+                .on("mouseout", ".name-project", function (evt) {
+                    tl = new TimelineLite();
+                    tl.to($(".project-preview"), 0.5, {
+                        width: 0,
+                        ease: Expo.easeInOut
+                    });
+                });
+        });
+        $(".project-0").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/00.gif)"
+            });
+        });
+
+        $(".project-1").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/01.png)"
+            });
+        });
+
+        $(".project-2").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/02.png)"
+            });
+        });
+
+        $(".project-3").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/03.png)"
+            });
+        });
+
+        $(".project-4").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/04.png)"
+            });
+        });
+
+        $(".project-5").hover(function () {
+            $(".project-preview").css({
+                "background-image": "url(./images/projets/05.png)"
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

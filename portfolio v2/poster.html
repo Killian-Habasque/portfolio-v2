@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Killian HABASQUE | Portfolio | Work - About - Contact</title>
+	<meta name="author" content="Killian Habasque">
+	<meta name="description"
+		content="Portfolio de Killian Habasque, étudiant français dans les domaines du web, du design, de la communication, et du graphisme.">
+	<meta name="keywords"
+		content="Killian Habasque, Killian, Habasque, portfolio, etudiant, dut, mmi, metiers, multimedia, internet, communication, audiovisuel, web, developpement, graphisme, webdesign, marketing, infographie, digital, programmation">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./script/script.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- TweenMax - GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+<div class="pageSOON">
+    <div class="texte">
+        <h1>SOON</h1>
+        <p>Le site est actuellement en développement. A retrouver prochainement !</p>
+    </div>
+</div>
+
+
+
+<style>
+body {
+	overflow: hidden;
+}
+.pageSOON {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.texte {
+    text-align: center;
+}
+.texte h1 {
+    font-family: GrandSlang;
+    font-size: 100px;
+    font-weight: 100;
+}
+.texte p {
+    font-family: helvetica;
+
+}
+
+</style>
+
+<!-- LANDING PAGE: PARALLAX -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	
+	
+
+<script>
+
+var tl = new TimelineMax();
+
+var tl = new TweenMax.staggerFrom(".texte h1", 2, {
+	opacity: 0,     
+	x: -50,
+	ease: Expo.easeInOut,
+	delay: 0.5
+});
+
+var tl = new TweenMax.staggerFrom(".texte p", 2, {
+	opacity: 0,     
+	y: 30,
+	ease: Expo.easeInOut,
+	delay: 1
+});
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
