@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Killian HABASQUE | Portfolio | Work - About - Contact</title>
+    <meta name="author" content="Killian Habasque">
+    <meta name="description"
+        content="Portfolio de Killian Habasque, étudiant français dans les domaines du web, du design, de la communication, et du graphisme.">
+    <meta name="keywords"
+        content="Killian Habasque, Killian, Habasque, portfolio, etudiant, dut, mmi, metiers, multimedia, internet, communication, audiovisuel, web, developpement, graphisme, webdesign, marketing, infographie, digital, programmation">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+</head>
+
+
+<body>
+
+    <style>
+        .transition{
+		position: fixed;
+		width:100%;
+		height:0%;
+		background: wheat;
+		z-index: 1000;
+		pointer-events: none;
+		transition : ease-in 0.3s;
+	}
+	.transition.active{
+		height:130%;
+		pointer-events: none;
+	}
+        </style>
+    <div id="transition_page" class=" transition active"></div>
+
+<!-- HEADER -->
+<header>
+    <nav class="nav">
+        <div class="box one">
+            <ul>
+                <li class="item active"><a class="header-txt" href="index.html">PORTFOLIO</a></li>
+            </ul>
+        </div>
+        <div class="box two">
+            <img class="logo" src="images/logoCut.svg" alt=""  onclick="window.location='index.html';">
+        </div>
+        <div class="box three">
+            <ul class="list-pages">
+                <li class="item"><a class="header-txt" href="projects.html">PROJECTS</a></li>
+                <li class="item"><a class="header-txt" href="about.html">ABOUT</a></li>
+                <li class="item"><a class="header-txt" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="box four">
+            <div class="menu-open">MENU</div>
+        </div>			
+    </nav>
+</header>
+
+<!-- MENU RESPONSIVE -->
+<div class="nav-container index">
+    <div class="menu-close">CLOSE</div>
+    <div class="menu-name">
+        <li>KILLIAN</li>
+        <li>HABASQUE</li>
+    </div>
+    <nav class="menu">
+        <div class="menu-item">
+            <a href="index.html" class="menu-item-link">PORTFOLIO</a>
+        </div>
+        <div class="bar-menu"></div>
+        <div class="menu-item">
+            <a href="projects.html" class="menu-item-link">PROJECTS</a>
+        </div>
+        <div class="menu-item">
+            <a href="about.html" class="menu-item-link">ABOUT</a>
+        </div>
+        <div class="menu-item">
+            <a href="contact.html" class="menu-item-link">CONTACT</a>
+        </div>
+    </nav>
+</div>
+
+
+
+
+    <section class="section-page">
+        <div class="page">
+            <div class="entete">
+                <div class="fleche">
+                    <div class="cercle" onclick="window.history.back();">
+                        <img src="/images/fleche.png" alt="">
+                    </div>
+                </div>
+
+                <div class="titre">
+                    <h1>BALADO</h1>
+                    <h2>©2021</h2>
+                    <h3>WEB DESIGN & INTEGRATION</h3>
+                </div>
+            </div>
+            <div class="illustration">
+                <div class="noir" onclick="window.location='https://www.behance.net/gallery/118473715/Webdesign-podcasts-site-Projet-MMI-20202021';">
+                    <img src="/images/projets/balado.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>DESCRIPTION</h3>
+                    <p>Balado est un site de podcast en ligne regroupant les 7 arts. Elle est composée d’une grande partie Back-end avec une gestion de podcast (ajout, modification, commentaires, favoris...), une gestion des profils en fonction des statuts (inconnu, connecté, administrateur). La partie Front-end est composée essentiellement de slider ou de menu burger. </p>
+                </div>  
+            </div>  
+
+                        
+            
+
+        </div>
+
+    </section>
+
+
+<!-- SECTION: FOOTER -->
+<footer>
+    <h1>(2021 - All Rights reserved)</h1>
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="script/transition.js"></script>
+    <script src="script/script.js"></script>
+    <script src="rellax.js"></script>
+<script>
+
+
+var rellax = new Rellax('.illustration');
+
+
+
+var tl = new TimelineMax();
+
+var tl = new TweenMax.staggerFrom(".titre h1", 2, {
+	opacity: 0,     
+	x: -50,
+	ease: Expo.easeInOut,
+	delay: 0.5
+}, 2);
+var tl = new TweenMax.staggerFrom(".titre h2", 2, {
+	opacity: 0,     
+	x: -50,
+	ease: Expo.easeInOut,
+	delay: 0.8
+}, 2);
+
+var tl = new TweenMax.staggerFrom(".titre h3", 2, {
+	opacity: 0,     
+	ease: Expo.easeInOut,
+	delay: 1.5
+}, 2);
+
+var tl = new TweenMax.staggerFrom(".illustration", 2, {
+	opacity: 0,    
+    y: 50, 
+	ease: Expo.easeInOut,
+	delay: 1
+}, 2);
+
+var tl = new TweenMax.staggerFrom(".cercle", 2, {
+	opacity: 0,    
+    scale: 0.5,
+	ease: Expo.easeInOut,
+	delay: 1
+}, 2);
+var tl = new TweenMax.staggerFrom(".cercle img", 2, {
+	opacity: 0,    
+    x: -20,
+	ease: Expo.easeInOut,
+	delay: 1.5
+}, 2);
+</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,2137 @@
+/* TODO ______________________________________IMPORTATION POLICE______________________________________ */
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('Helvetica.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'GrandSlang\ Roman';
+    src: local('GrandSlang\ Roman'), url('GrandSlang\ Roman.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: local('Helvetica-BoldOblique'), url('Helvetica-BoldOblique.ttf') format('ttf');
+}
+
+/* TODO ______________________________________GENERAL______________________________________ */
+
+::-moz-selection {
+    background: wheat;
+    color: black;
+}
+
+::selection {
+    background: wheat;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: rgb(180, 180, 180) white;
+    scrollbar-width: thin;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* TODO ______________________________________SCROLLBAR______________________________________ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: white;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 136, 136); 
+  }
+
+
+
+
+
+
+
+/* TODO ______________________________________HEADER______________________________________ */
+header {
+    height: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-bottom: 2px solid transparent;
+    animation: animation-border-header 0.7s ease-in-out 0.5s forwards;
+}
+@keyframes animation-border-header {
+    from {border-bottom: 2px solid transparent; margin-top: 10px;}
+    to {border-bottom: 2px solid black; margin-top: 0px;}
+  }
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .item {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Helvetica';
+}
+
+.box.three, .box.four {
+    justify-content: flex-end;
+}
+
+.list-pages {
+    display: flex;
+    gap: 30px;
+
+}
+
+
+.box.two {
+    justify-content: center;
+}
+
+.box.two a {
+    display: contents;
+}
+
+.logo {
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* TODO ______________________________________RESPONSIVE MENU______________________________________ */
+
+.box.four{
+	display: none;
+}
+
+.menu-close {
+	display: none;
+}
+.menu-name {
+	display: none;
+}
+.menu {
+	display: none;
+}
+
+.nav-container {
+	visibility: hidden;
+}
+
+.item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* TODO ______________________________________INDEX______________________________________ */
+
+/** ____________________INDEX: LANDING PAGE____________________*/
+
+.landing-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 15vh;
+}
+
+.infos {
+    align-items: center;
+    display: flex;
+}
+
+.portrait {
+    height: 80vh;
+    position: relative;
+}
+
+.portrait::before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 50vh;
+    background: repeat url(../images/motif_bar.png);
+    left: -62px;
+    background-size: 300px;
+    bottom: -20vh;
+    animation: animation-motif-bar 0.7s ease-in-out 1s forwards;
+    opacity: 0;
+}
+@keyframes animation-motif-bar {
+    from {bottom: 20vh; opacity: 0;}
+    to {bottom: -10vh; opacity: 1;}
+  }
+
+.moi {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+}
+
+.moi img {
+    height: 100%;
+
+}
+
+.moi:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #000;
+    right: -20px;
+    bottom: 100px;
+
+    animation: animation-petite-bar 1s ease-in-out 2.2s forwards;
+    opacity: 0;
+
+}
+  @keyframes animation-petite-bar {
+    from {bottom: 100px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
+  }
+
+
+.moi:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+    right: -20px;
+    bottom: 100px;
+
+    animation: animation-grande-bar 1s ease-in-out 2s forwards;
+    opacity: 0;
+}
+@keyframes animation-grande-bar {
+    from {bottom: 100px; opacity: 0;}
+    to {bottom: 35px; opacity: 1;}
+  }
+
+.name {
+    z-index: 2;
+    margin-left: -82px;
+    position: relative;
+}
+.name::before {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 170px;
+    background: repeat url(../images/motif_plus.png);
+    background-size: cover;
+    right: -12vw;
+    bottom: -14vh;
+
+
+    animation: animation-opacity 1s linear 2s forwards;
+    opacity: 0;
+}
+@keyframes animation-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.name h1 {
+    font-family: 'GrandSlang';
+    font-size: 90px;
+    font-weight: 100;
+}
+
+.name p {
+    font-family: 'Helvetica';
+    letter-spacing: 5px;
+}
+
+.name h1:last-child,
+.name p {
+    margin-left: 7px;
+}
+
+/* ? Code apparition */
+.name h1 {
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+  }
+  
+  .killian .letter {
+    display: inline-block;
+    line-height: 1em;
+    opacity: 0;
+  }
+  .habasque .letter {
+    display: inline-block;
+    line-height: 1em;
+    opacity: 0;
+  }
+
+
+
+
+
+/** ____________________1000____________________*/
+@media screen and (max-width: 1000px) {
+    .box.one {
+        display: none;
+    }
+    .box.two {
+        justify-content: left;
+    }
+
+    .infos {
+        flex-direction: column;
+    }
+    .name {
+        margin-top: 80px;
+        margin-left: -55px;
+    }
+}
+/** ____________________600____________________*/
+@media screen and (max-width: 600px) {
+    
+/* ? ___HEADER___*/
+    header {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .box.three {
+        display: none;
+    }
+    .box.four {
+        display: flex;
+    }
+
+/* ? ___MENU RESPONSIVE___*/
+    .menu-close {
+        display: grid;
+    }
+    .nav-container.project .menu-close a {
+        color: white;
+    }
+    .menu-name {
+        display: grid;
+    }
+    .menu {
+        display: grid;
+    } 
+    .menu-close, .menu-open {
+        cursor: pointer;
+        padding: 20px;
+        padding-right: 0;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .menu-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 40px;
+        padding-right: 15px;
+    }   
+    
+    .nav-container {
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        height: 100vh;
+        background: wheat;
+        z-index: 50;
+        font-family: 'Helvetica';
+        visibility: visible;
+        transition: all 0.3s ease-in-out;
+
+    }
+    
+    .menu-item {
+        position: relative;
+        padding: 1vh 6vw;
+    }
+    
+    .menu-item-link {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        transition: opacity 0.4s;
+    }
+    
+    .menu-item-link:hover {
+        transition-duration: 0.1s;
+        color: white;
+    }
+    
+    .menu {
+        padding: 25vh 0 25vh;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        font-size: 8vw;
+    }
+    
+    .bar-menu {
+        position: relative;
+        height: 2px;
+        background: black;
+        margin:  6vw;
+    }
+    
+ 
+    .menu-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 40px;
+        padding-left: 15px; 
+        font-family: 'GrandSlang'; 
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    .menu-name li:first-child {
+        margin-left: -0.2vw;
+    }
+
+
+/* ? ___LANDING PAGE___*/
+
+    .landing-page {
+        margin-top: 4.5vh;
+    }
+    .portrait {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .moi, .moi img {
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+    }  
+    .portrait::before, .moi::before, .moi::after {
+        content: none;
+    }
+    .name {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .name h1 {
+        font-size: 15vw;
+    }
+    .name h1:last-child, .name p {
+        margin-left: 1vw;
+    }
+
+    
+}
+
+
+
+
+
+
+
+/** ____________________INDEX: PROJET____________________*/
+
+
+.index-projects {
+    z-index: 3;
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 60px;
+}
+
+.index-project img {
+transform: rotate(-45deg);
+}
+
+.index-project * {
+    color: transparent;
+    opacity: 0;
+}
+.index-project.reveal p, .index-project.reveal img{
+    animation: reveal-element-transition-left 2s ease forwards;
+    color: black;
+    opacity: 1;
+}
+@keyframes reveal-element-transition-left {
+    from {color: transparent;
+        transform: translate(-200px);
+    }
+    to {
+        color: black;
+        transform: translate(0);
+    }
+}
+.index-project.reveal h1{
+    animation: reveal-text-opacity 2s ease forwards;
+    color: black;
+    opacity: 1;
+}
+@keyframes reveal-text-opacity {
+    from {
+        color: transparent;
+    }
+    to {
+        color: black;   
+    }
+}
+
+
+.titre-projects, .redi-projects {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+.titre-projects {
+    border-bottom: black 2px solid;
+}
+.redi-projects {
+    text-decoration: underline;
+    justify-content: flex-end;
+}
+.index-project {
+    height: 125px;
+    border-bottom: black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index-project * {
+    z-index: -1;
+}
+.index-project h1 {
+    font-family: 'GrandSlang';
+    letter-spacing: 1px;
+    font-size: 40px;
+    width: 230px;
+}
+.index-project p {
+    font-family: 'Helvetica';
+    font-size: 12px;
+}
+
+.index-project .fleche {
+    width: 80px;
+}
+
+/** ____________________700____________________*/
+@media screen and (max-width: 700px) {
+    .index-projects {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .index-project h1 {
+        font-size: 5vw;
+        width: auto;
+    }
+    .index-project p {
+        font-size: 2.5vw;
+    }
+    .index-project .fleche {
+        width: 12vw;
+    }
+}
+
+
+/** ____________________INDEX: ABOUT____________________*/
+
+.index-about {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 120px;
+    padding-bottom: 120px;
+}
+
+.index-about::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: repeat url(../images/motif_point.png);
+    background-size: 300px;
+    right: -60px;
+    top: -60px;
+    transform: translate(300px);
+}
+
+.index-about.reveal::before {
+    animation: reveal-element-translate-right 2s ease-in-out forwards;
+    transform: translate(0);
+}
+@keyframes reveal-element-translate-right {
+    from {
+        transform: translate(300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+
+.index-about .titre h1 {
+    font-family: 'GrandSlang';
+    letter-spacing: 1px;
+    font-size: 65px;
+    font-weight: 100;
+}
+.index-about .titre h1::after {
+    content: '';
+    position: relative;
+    height: 2px;
+    display: inline-block;
+    background: transparent;
+}
+
+.index-about .titre h1 {
+    color: transparent;
+}
+.index-about .titre.reveal h1 {
+    animation: reveal-element-translate-top 1s ease-out  forwards;
+    color: black;
+}
+
+.index-about .titre.reveal h1::after{
+    animation: reveal-bar-animation 2s ease-out   forwards;
+    width: 100px;
+    background: black;
+}
+@keyframes reveal-bar-animation {
+    from { width: 0; background: transparent;}
+    to { width: 100px; background: black;}
+}
+
+
+
+
+.index-about .texte {
+    font-family: 'Helvetica';
+    font-size: 12px;
+    margin-top: 60px;
+    margin-left: 20%;
+    width: 55%;
+    display: flex;
+    gap: 60px;
+}
+.index-about .texte h2 {
+    font-family: 'HelveticaBold';
+    font-size: 12px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+}
+.index-about .texte h3, .index-contact .texte h3 {
+    font-size: 250px;
+    font-family: 'GrandSlang';
+    font-weight: 100;
+}
+.index-about .texte p {
+    font-size: 18px;
+    margin-top: 30px;
+    text-indent: 80px;
+}
+.index-about .texte p:first-child {
+    margin-top: 60px;
+}
+.redirection {
+    font-family: 'Helvetica';
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 30px;
+
+}
+
+
+
+/** ____________________INDEX: CONTACT____________________*/
+
+.index-contact {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 120px;
+    padding-bottom: 120px;
+}
+.index-contact::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 400px;
+    background: repeat url(../images/motif_bar.png);
+    background-size: 300px;
+    left: -200px;
+    top: -100px;
+    transform: translate(-200px) rotate(90deg);
+}
+
+.index-contact.reveal::before {
+    animation: reveal-element-translate-left-rota 3s ease-in-out forwards;
+    transform: translate(0) rotate(90deg);
+}
+@keyframes reveal-element-translate-left-rota {
+    from { transform: translate(-200px) rotate(90deg);}
+    to { transform: translate(0) rotate(90deg); }
+}
+
+
+.index-contact .titre {
+    display: flex; 
+    justify-content: center;
+}
+.index-contact .titre h1 {
+    font-family: 'GrandSlang';
+    letter-spacing: 1px;
+    font-size: 100px;
+    font-weight: 100;
+    color: transparent;
+}
+.index-contact .titre.reveal h1 {
+    animation: reveal-element-transition-left 2s ease forwards;
+    color: black;
+}
+.email {
+    font-family: 'GrandSlang';
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 100; 
+    text-decoration: underline;
+}
+.index-contact .texte {
+    font-family: 'Helvetica';
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.index-contact p:first-child {
+    max-width: 350px;
+}
+.grid-texte.two  {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+margin-left: 60px;
+}
+
+
+ .grid-texte.two *, .grid-texte.one *  {
+    color: transparent;
+}
+.index-about .grid-texte.one.reveal *,.index-contact .grid-texte.two.reveal *{
+    animation: reveal-element-translate-top 2s ease forwards;
+    color: black;
+}
+
+.index-contact .grid-texte.one.reveal *,.index-about .grid-texte.two.reveal *{
+    animation: reveal-element-translate-top 4s ease forwards;
+    color: black;
+}
+
+@keyframes reveal-element-translate-top {
+    from {
+        color: transparent;
+        transform: translate(0, -30px);
+    }
+    to {
+        color: black;
+        transform: translate(0);
+    }
+}
+
+
+.index-contact .reseaux {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.index-contact .reseaux div {
+    cursor: pointer;  
+}
+
+/** ____________________1100____________________*/
+@media screen and (max-width: 1100px) {
+    
+    .index-about {
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
+    .index-about .texte {
+        flex-direction: column;
+        width: auto;
+        margin-left: 0;
+    }
+    .index-about .texte h3, .index-contact .texte h3 {
+        display: grid;
+        justify-items: center;
+        font-size: 160px;
+    }
+    .index-contact .texte h3 {
+        margin-top: -70px;
+    }
+    .index-about .texte h3 {
+        margin-top: -50px;    
+    }
+
+    .index-contact .texte {
+        flex-direction: column;
+    }
+    .index-contact::before {
+        top: -300px;
+    }
+    .grid-texte.two {
+        display: grid;
+        justify-items: center;
+        margin-left: 0;
+    }
+
+    .index-contact p {
+        text-align: center;
+    }
+    .index-about .texte h2 {
+        margin-top: 0;
+
+    }
+
+    .index-contact::before {
+        left: -250px;
+    }
+    .index-about::before {
+        height: 260px;
+        right: -120px;
+        top: -100px;
+    }
+    .index-contact p:first-child {
+        margin-top: -30px;
+    }
+}
+
+/** ____________________700____________________*/
+@media screen and (max-width: 700px) {
+    .index-about {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .index-about .titre h1 {
+        font-size: 12vw;
+    }  
+    .index-about .titre h1::after {
+        width: 20vw;
+    } 
+    .index-about .texte h3, .index-contact .texte h3 {
+        font-size: 20vw;
+    }
+
+
+    .index-contact::before {
+        left: -300px;
+    }
+
+    .index-contact .titre h1 {
+        font-size: 15vw;
+    }
+    .grid-texte.two {
+        word-break: break-word;
+    }
+    .index-about::before {
+        height: 200px;
+    }
+}
+
+
+
+
+/** ____________________FOOTER____________________*/
+
+footer {
+    height: 100px;
+    margin-top: 120px;
+    border-top: black 2px solid;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: 'GrandSlang';
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 100; 
+}
+
+/** ____________________700____________________*/
+@media screen and (max-width: 700px) {
+
+    footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer h1 {
+        font-size: 3.5vw;
+    }
+}
+
+
+/* TODO ______________________________________PROJECTS______________________________________ */
+
+
+/** ____________________RESPONSIVE MENU____________________*/
+.nav-container.project .menu-close, .nav-container.project .menu-item-link  {
+    color: white;
+}
+.nav-container.project {
+    background: black;
+    color: white;
+}
+.nav-container.project  .menu-item-link:hover {
+    color: wheat;
+}
+.nav-container.project .bar-menu {
+    background: white;
+}
+
+
+
+/** ____________________PROJECTS: LANDING____________________*/
+
+.section-projects {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.behance-texte {
+    font-size: 80px;
+    letter-spacing: 6px;
+    z-index: 5;
+
+}
+
+.helv {
+    font-family: 'Helvetica';
+}
+
+.slang {
+    font-family: 'GrandSlang';
+}
+
+.behance-texte .bar {
+    font-family: 'Helvetica';
+    height: 2px;
+    background: black;
+    display: inline-block;
+    align-self: center;
+    font-size: 20px;
+    padding-left: 100px;
+    line-height: 2.5;
+    letter-spacing: 5px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom .helv {
+    margin-top: -5px;
+}
+
+.section-projects:after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    bottom: -10%;
+    left: 10%;
+    background: url(../images/motif.png);
+    background-size: 300px;
+    transform: translate(-100%);
+}
+
+.section-projects.reveal:after {
+    animation: reveal-element-translate-left 3s ease-in-out forwards;
+    transform: translate(0);
+
+}
+@keyframes reveal-element-translate-left {
+    from {
+        transform: translate(-200%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+
+.behance-button {
+    width: 150px;
+    height: 150px;
+    background: black;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.behance-button.on-focus2 * {
+    opacity: 0;
+
+}
+
+.behance-button i {
+    align-items: center;
+    display: flex;
+}
+
+
+
+.center-polygon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polygon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+#cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 15px;
+}
+
+.arrow.two {
+    margin-left: 8px;
+}
+
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes animationArrow {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.behance-button .arrow {
+    animation-name: animationArrow;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.behance-button .arrow.one {
+    animation-name: animationArrow;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+/** ____________________PROJECTS: EXEMPLES____________________*/
+
+.body-project {
+    background: wheat;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+
+}
+
+.location-project {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.num-project {
+    font-family: 'GrandSlang';
+    font-weight: 100;
+}
+
+.name-project {
+    font-family: 'GrandSlang';
+    font-size: 60px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.desc-project {
+    display: flex;
+    justify-content: center;
+    font-family: 'Helvetica';
+    letter-spacing: 2px;
+}
+
+
+.project-preview-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 25vh;
+    z-index: -1;
+}
+
+.project-preview {
+    position: fixed;
+    align-items: center;
+    width: 0px;
+    height: 400px;
+    background: url(img1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.5;
+    animation: navAfter 10s linear infinite;
+}
+
+
+
+
+@keyframes navAfter {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    20% {
+        transform: translate(-10px, 10px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translate(20px, -20px);
+    }
+
+    60% {
+        transform: translate(-20px, 20px) rotate(2deg);
+    }
+
+    80% {
+        transform: translate(10px, -10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .project-preview-wrapper {
+        display: none;
+    }
+
+}
+
+
+/** ____________________800____________________*/
+@media screen and (max-width: 800px) {
+
+    .section-projects {
+        height: calc(100vh - 100px);
+    }
+   .behance-texte {
+        font-size: 9vw;
+        letter-spacing: 1vw;    
+    }  
+    .behance-texte .top, .behance-texte .bottom {
+        gap: 4vw; 
+    }  
+    .behance-texte .bar {
+        font-size: 2.5vw;
+        padding-left: 13vw;
+        letter-spacing: 1vw;
+    }
+    .behance-button {
+        width: 100px;
+        height: 100px;
+    }   
+    .section-projects::after {
+        left: 0;
+        width: 40vw;
+        height: 400px;
+    }
+
+
+
+    .name-project {
+        font-family: 'GrandSlang';
+        font-size: 9vw;
+        font-weight: 100;
+        word-break: break-word;
+        text-align: center;
+    }
+    .project-5 {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .desc-project,.num-project {
+        font-size: 5vw;
+    }
+    .num-project {
+        margin-right: 1vw;
+    }
+}
+
+
+
+/* TODO ______________________________________ABOUT______________________________________ */
+
+/** ____________________HEADER____________________*/
+
+.header-about a {
+    color: white;
+}
+
+.header-about {
+    animation: animation-border-header-about 0.7s ease-in-out 0.5s forwards;
+}
+@keyframes animation-border-header-about {
+    from {border-bottom: 2px solid transparent; margin-top: 10px;}
+    to {border-bottom: 2px solid white; margin-top: 0px;}
+  }
+
+/** ____________________RESPONSIVE MENU____________________*/
+.nav-container.about .menu-close, .nav-container.about .menu-item-link, .nav-container.about .menu-name  {
+    color: black;
+}
+.nav-container.about {
+    background: white;
+    color: white;
+}
+.nav-container.about  .menu-item-link:hover {
+    color: wheat;
+}
+.nav-container.about .bar-menu {
+    background: black;
+}
+.header-about .menu-open {
+    color: white;
+}
+
+
+/** ____________________ABOUT: LANDING PAGE____________________*/
+.body-about {
+    background: black;
+}
+
+.section-about {
+    height: 100vh;
+}
+
+
+.section-about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 25vh;
+}
+
+
+
+.zone-images-about {
+    height: 50vh;
+}
+
+
+.zone-images-about img { 
+    height: 100%;
+
+}
+
+.zone-images-about.one {
+    height: 70vh;
+    transform: rotate(-4deg);
+    z-index: 2;
+    margin-top: 30%;
+    margin-right: -5%;
+}
+
+.zone-images-about.two {
+    position: relative;
+    height: 60vh;
+
+}
+
+.texte-about h1 {
+    font-family: 'GrandSlang';
+    font-size: 200px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    bottom: -80px;
+}
+
+.info-perso {
+    display: flex;
+    justify-content: end;
+    color:white;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    gap: 50px;
+    margin-top: 120px;
+    line-height: 1.75;
+}
+
+
+/** ____________________ABOUT: PRESENTATION____________________*/
+
+.section-about-presentation {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.presentation {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.presentation h1::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 175px;
+    right: -5vw;
+    background: white;
+}
+
+
+.presentation h1 {
+    position: relative;
+    font-family: 'GrandSlang';
+    font-size: 100px;
+    font-weight: 100;
+    color:wheat;
+}
+
+
+.presentation p {
+    display: flex;
+    align-items: center;
+    font-family: 'Helvetica';
+    width: 40%;
+    max-width: 450px;
+    color:white;
+    line-height: 1.75;
+    
+}
+
+
+/** ____________________ABOUT: FORMATION____________________*/
+
+
+.formations {
+    width: 100%;
+    margin-top: 300px;
+}
+.formations h1 {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.formation  {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid white;
+    padding: 60px;
+}
+
+.formations .date {
+    font-family: 'GrandSlang';
+    font-size: 100px;
+    font-weight: 100;
+    color: white;
+} 
+.formations .titre {
+    font-family: 'GrandSlang';
+    font-size: 26px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+} 
+
+.formation.dut  {
+    display: grid;
+    justify-items: end;
+}
+.formation.bac  {
+    border-bottom: 2px solid white;
+}
+.formation.dut .titre  {
+    padding-right: 60px;
+}
+.formation.bac .titre  {
+    padding-left: 60px;
+}
+
+/** ____________________ABOUT: EXPERIENCE____________________*/
+
+
+.work-experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+.work-experience .titre {
+    display: flex;
+    align-self: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+.work {
+    align-self: center;
+    font-family: 'Helvetica';
+    font-size: 40px;
+    color: white;
+    font-weight: 1500;
+    letter-spacing: 10px;
+}
+.experience {
+    align-self: center;
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    color: wheat;
+    margin-top: -25px;
+}
+.jobs-grid {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    max-width: 600px;
+    gap: 20%;
+    margin-top: 100px;
+}
+.job {
+    font-family: 'HelveticaBold';
+    font-size: 13px;
+    font-weight: 800;
+}
+.job p {
+    font-family: 'Helvetica';
+    margin-top: 20px;
+    font-weight: 100;
+}
+.job h3 {
+    letter-spacing: 0.8px;
+}
+
+/** ____________________ABOUT: COMPETENCE____________________*/
+
+.competences {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.competences .titre {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+}
+
+.langages {
+    width: 100%;
+}
+
+
+.langages h2, .logiciels h2 {
+    justify-items: center;
+    display: grid;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 75px;
+}
+
+.langages-grid {
+    display: flex;
+    gap: 5%;
+    color: white;
+    margin-top: 25px;
+}
+
+
+.langage h3, .logiciel h3 {
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.langage p, .logiciel p {
+    font-family: 'Helvetica';
+    font-size: 13px;
+}
+
+
+
+.logiciels {
+    width: 100%;
+    margin-top: 50px;
+}
+.logiciels-grid {
+    color: white;
+    margin-top: 25px;
+    justify-items: center;
+    display: grid;
+}
+.logiciels-grid .bar {
+    height: 2px;
+    background: white;
+    align-self: flex-end;
+    width: 100px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.logiciel {
+    display: flex;
+    margin-bottom: 25px;
+}
+.logiciel h3 {
+    display: flex;
+    align-items: flex-end; 
+}
+.logiciel .bar {
+    width: 100px;
+    height: 2px;
+    background: white;
+    position: relative;
+}
+.logiciel p {
+    max-width: 500px;
+
+}
+
+
+/** ____________________ABOUT: CONTACT____________________*/
+
+
+.contact {
+    width: 100%;
+    margin-top: 300px;
+    height: 200px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.contact h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-family: 'HelveticaBold';
+    font-size: 30px;
+    letter-spacing: 0.7px;
+}
+
+
+.contact .cercle {
+    width: 200px;
+background: black;
+height: 200px;
+position: absolute;
+border-radius: 50%;
+border: 2px solid white;
+top: -1px;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.contact .fleche {
+    width: 80px;
+}
+
+.section-about-presentation .reseaux {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.section-about-presentation .reseaux img {
+    width: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    cursor: pointer;
+}
+
+
+
+/** ____________________1000____________________*/
+@media screen and (max-width: 1000px) {
+    .section-about {
+        height: auto;
+    }
+    .zone-images-about.one {
+        margin-bottom: -10%;
+        margin-right: 0;
+        margin-top: 10%;
+    }
+    .zone-images-about.two {
+        height: 55vh;
+        margin-top: 5vh;
+        z-index: 5;
+    }
+
+    .texte-about h1 {
+        font-size: 160px;
+        margin-top: -100px;
+        position: inherit;
+        text-align: center;
+    }
+
+    .info-perso {
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .info-perso p {
+        text-align: center;
+    }
+
+
+}
+
+/** ____________________800____________________*/
+@media screen and (max-width: 800px) {
+
+    .presentation {
+        flex-direction: column;
+    }
+    .presentation h1::after {
+        content: none;
+    }
+    .presentation h1 {
+        text-align: center;
+    }
+    .presentation p {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+
+    .competences .titre {
+        font-size: 4.2vw;
+    }
+
+    .langages {
+        display: flex;
+        flex-direction: column;
+    }
+    .langages-grid {
+        gap: 50px;
+        flex-direction: column;
+        align-self: center;
+        max-width: 200px;
+    }
+    .langage {
+        text-align: center;
+    }
+
+    .logiciel {
+        margin-bottom: 25px;
+        gap: 2vw;
+    }
+    .logiciel h3 {
+        align-items: flex-start;
+    }
+    .logiciel p {
+        max-width: 400px;
+    }
+
+    .logiciels-grid .bar {
+        display: none;
+    }
+
+
+
+    .contact h1 {
+        margin-top: -50px;
+        align-items: flex-start;
+    }
+}
+
+/** ____________________700____________________*/
+@media screen and (max-width: 700px) {
+
+
+    .formation.dut, .formation.bac  {
+        justify-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .formation.bac  {
+        display: grid;
+    }
+    .formation.dut .titre, .formation.bac .titre  {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .formations .date {
+        font-size: 15vw;
+    }
+    .formations .titre {
+        font-size: 4vw;
+    }
+
+
+
+    .jobs-grid {
+        flex-direction: column;
+        gap: 50px;
+        max-width: 200px;
+    }  
+    .job {
+        text-align: center;
+    }
+
+
+}
+
+
+
+/** ____________________600____________________*/
+@media screen and (max-width: 600px) {
+
+    .section-about-presentation {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .texte-about h1 {
+        font-size: 30vw;
+        margin-top: -20vw;
+    }
+
+
+    .work-experience {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .contact {
+        margin-top: 200px;
+    }
+    .formations {
+        margin-top: 200px;
+    }
+}
+
+
+
+
+/* TODO ______________________________________PAGE______________________________________ */
+
+
+
+.section-page {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.entete {
+    display: flex;
+}
+
+
+.entete .fleche {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-content: center;
+}
+.entete .fleche .cercle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    border: 2px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.entete .fleche .cercle img {
+    width: 100px;
+}
+.illustration {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.illustration .noir {
+    width: 100%;
+    height: 600px;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.illustration .noir img {
+    width: 100%;
+    object-fit: cover; 
+    transition: all 0.3s ease-in-out; 
+}
+.illustration .noir img:hover {
+    transform: scale(1.1);
+}
+.section-page h1, .section-page h2 {
+    font-family: "HelveticaBold";
+    font-size: 110px;
+    letter-spacing: -5px;
+    line-height: 1;
+    padding-right: 20px;
+}
+
+ .section-page h2 {
+    margin-top: -20px;
+}
+.section-page h3 {
+    font-family: 'Helvetica';
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.illustration .description  {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.illustration .description p {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+}
+.illustration .description h3 {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/** ____________________1000____________________*/
+@media screen and (max-width: 1000px) {
+
+    .entete {
+        flex-direction: column;
+    }
+
+    .illustration {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+/** ____________________600____________________*/
+@media screen and (max-width: 600px) {
+
+    .section-page {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .section-page h1, .section-page h2 {
+        font-size: 19vw;
+    }
+    .section-page h2 {
+        margin-top: -2.5vw;
+    }
+
+    .illustration .noir {
+        height: 400px;
+    }
+}
+
+
+
+/* TODO ______________________________________CONTACT______________________________________ */
+
+
+.section-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.section-contact h1 {
+    font-family: "HelveticaBold";
+    font-size: 110px;
+    letter-spacing: -5px;
+    line-height: 0.9;
+    transform: translate(-15px, 0);
+}
+
+.section-contact p {
+    font-family: "GrandSlang";
+    font-size: 25px;
+    margin-top: 40px;
+    text-decoration: underline;
+    color: transparent;
+    animation: reveal-text-opacity 2s ease 2s forwards;
+}
+.titre-contact {
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+.h1-contact {
+    position: relative;
+    
+}
+.h1-contact::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    right: -100px;
+    bottom: -3vh;
+    background: black;
+    transform: translate(-300px);
+    animation: reveal-element-width 2s ease 1.5s forwards;
+}
+@keyframes reveal-element-width {
+    from {
+        width: 0;
+        transform: translate(-300px);
+    }
+    to {
+        width: 230px;
+        transform: translate(0);
+    }
+}
+
+.h1-contact::after {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: -100px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    bottom: -3vh;
+    animation: reveal-element-scale 2s ease 0.3s forwards;
+    z-index: -1;
+}
+
+@keyframes reveal-element-scale {
+    from {
+        transform: scale(0);
+        border: 2px solid black;
+    }
+    to {
+        transform: scale(1);
+        border: 2px solid black;
+    }
+}
+
+.section-contact .reseaux {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.section-contact .reseau {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.section-contact .reseaux img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.section-contact::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 340px;
+    background: repeat url(../images/motif_plus.png);
+    background-size: auto;
+    background-size: cover;
+    left: 0;
+    bottom: 10vh;
+    animation: animation-opacity-translate 0.8s cubic-bezier(0.075, 0.82, 1, 1) 2s forwards;
+    transform: translate(-200px);
+    opacity: 0;
+}
+@keyframes animation-opacity-translate {
+    from {transform: translate(-200px); opacity: 0;}
+    to {transform: translate(0); opacity: 1;}
+  }
+
+/** ____________________500____________________*/
+@media screen and (max-width: 500px) {
+
+
+    .section-contact h1 {
+        font-size: 25vw;
+    }
+    .section-contact p {
+        font-size: 5vw;
+    }
+    .h1-contact::after {
+        width: 55vw;
+        height: 55vw;
+        left: -15vw;
+        bottom: -3vh;
+    }  
+    .section-contact::before {
+        content: none;
+    }  
+}
