@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Killian HABASQUE | Portfolio | Work - About - Contact</title>
+	<meta name="author" content="Killian Habasque">
+	<meta name="description"
+		content="Portfolio de Killian Habasque, étudiant français dans les domaines du web, du design, de la communication, et du graphisme.">
+	<meta name="keywords"
+		content="Killian Habasque, Killian, Habasque, portfolio, etudiant, dut, mmi, metiers, multimedia, internet, communication, audiovisuel, web, developpement, graphisme, webdesign, marketing, infographie, digital, programmation">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./script/script.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+
+      <!-- RellaxJS -->
+      <script src="rellax.js"></script>
+
+</head>
+
+
+<body>
+<!-- HEADER -->
+<style>
+	.transition{
+		position: fixed;
+		width:100%;
+		height:0%;
+		background: wheat;
+		z-index: 1000;
+		pointer-events: none;
+		transition : ease-in 0.3s;
+	}
+	.transition.active{
+		height:130%;
+		pointer-events: none;
+	}
+
+	</style>
+<div id="transition_page" class=" transition active"></div>
+
+	<header>
+		<nav class="nav">
+			<div class="box one">
+				<ul>
+					<li class="item active"><a class="header-txt" href="index.html">PORTFOLIO</a></li>
+				</ul>
+			</div>
+			<div class="box two">
+				<img class="logo" src="images/logoCut.svg" alt=""  onclick="window.location='index.html';">
+			</div>
+			<div class="box three">
+				<ul class="list-pages">
+					<li class="item"><a class="header-txt" href="projects.html">PROJECTS</a></li>
+					<li class="item"><a class="header-txt" href="about.html">ABOUT</a></li>
+					<li class="item"><a class="header-txt" href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="box four">
+				<div class="menu-open">MENU</div>
+			</div>			
+		</nav>
+	</header>
+
+<!-- MENU RESPONSIVE -->
+	<div class="nav-container index">
+		<div class="menu-close">CLOSE</div>
+		<div class="menu-name">
+			<li>KILLIAN</li>
+			<li>HABASQUE</li>
+		</div>
+		<nav class="menu">
+			<div class="menu-item">
+				<a href="index.html" class="menu-item-link">PORTFOLIO</a>
+			</div>
+			<div class="bar-menu"></div>
+			<div class="menu-item">
+				<a href="projects.html" class="menu-item-link">PROJECTS</a>
+			</div>
+			<div class="menu-item">
+				<a href="about.html" class="menu-item-link">ABOUT</a>
+			</div>
+			<div class="menu-item">
+				<a href="contact.html" class="menu-item-link">CONTACT</a>
+			</div>
+		</nav>
+	</div>
+
+
+<!-- SECTION: LANDING PAGE -->
+	<section class="landing-page">
+		<div class="infos">
+			<div class="portrait">
+				<div class="moi" data-rellax-speed="2"><img class="image" src="images/moi4 v2.png" alt=""></div>
+
+			</div>
+
+			<div class="name">
+				<p class="annee">2021</p>
+				<h1 class="killian">KILLIAN</h1>
+				<h1 class="habasque">HABASQUE</h1>
+			</div>
+		</div>
+	</section>
+
+<!-- SECTION: PROJECTS -->
+	<section class="index-projects">
+		<div class="titre-projects">
+			<p>Selected projects</p>	
+		</div>
+		<div class="projects">
+			<a href="auchan.html" class="index-project one">
+				<h1>Auchan</h1>
+				<p>DESIGN</p>
+				<p>PERSONAL PROJECT</p>
+				<img src="/images/fleche.png" alt="" class="fleche">
+			</a>
+			<a href="balado.html" class="index-project two">
+				<h1>Balado</h1>
+				<p>DEVWEB</p>
+				<p>UNIVERSITY PROJECT</p>
+				<img src="/images/fleche.png" alt="" class="fleche">
+			</a>
+			<a href="portfolio.html" class="index-project tree">
+				<h1>Portfolio v1</h1>
+				<p>DEVWEB</p>
+				<p>UNIVERSITY PROJECT</p>
+				<img src="/images/fleche.png" alt="" class="fleche">
+			</a>
+			<div class="redi-projects">
+				<a href="projects.html">ALL PROJECTS</a>	
+			</div>		
+		</div>
+
+	</section>
+
+<!-- SECTION: ABOUT -->
+	<section class="index-about">
+		<div class="titre">
+			<h1>ABOUT</h1>
+		</div>
+		<div class="texte">
+			<div class="grid-texte one">
+				<h2>PRESENTATION PERSONNEL</h2>
+				<p>	Je suis Killian Habasque, un étudiant passionné par les domaines du web et du design. Je viens de Quimper et j’étudie actuellement à Laval.</p>
+				<p>	Vous pouvez retrouver dans cette section, divers informations sur mes compétences, mes études ou encore mon expérience.</p>
+				<div class="redirection">
+					<a href="about.html">LEARN MORE</a>
+				</div>
+			</div>
+			<div class="grid-texte two">
+				<h3>?</h3>
+			</div>
+		</div>
+	</section>
+
+<!-- SECTION: CONTACT -->
+	<section class="index-contact">
+		<div class="titre">
+			<h1>CONTACT</h1>
+		</div>
+		<div class="texte">
+			<div class="grid-texte one">
+				<h3>@</h3>
+			</div>
+			<div class="grid-texte two">
+				<p>	Je suis disponible pour divers projets et ouvert à la discusion. N’hésitez pas à me contacter par mail:</p>
+				<p class="email">killian.habasque@gmail.com</p>
+				<div class="reseaux">
+					<div onclick="window.location='https://www.behance.net/killian-habasque';">Behance →</div>
+					<div onclick="window.location='https://www.linkedin.com/in/killian-habasque-041841220/';">Linkedin →</div>
+				</div>
+				<div class="redirection">
+					<a href="contact.html">MORE</a>
+				</div>
+			</div>			
+	
+		</div>
+
+	</section>	
+
+<!-- SECTION: FOOTER -->
+	<footer>
+		<h1>(2021 - All Rights reserved)</h1>
+	</footer>
+
+
+
+	<script src="script/transition.js"></script>
+	<script src="script/script.js"></script>
+
+<!-- LANDING PAGE: PARALLAX -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	
+	
+	
+	<script type="text/javascript">
+//__________________Image Landing page__________________
+		var rellax = new Rellax('.moi');
+	
+  
+
+//__________________Name index__________________
+var textWrapper = document.querySelector('.killian');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline()
+    .add({
+        targets: '.killian .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 2000 + 50 * i
+    });
+
+    var textWrapper = document.querySelector('.habasque');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline()
+    .add({
+        targets: '.habasque .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 2200 + 50 * i
+    });
+
+//__________________Texte index__________________ 
+	var tl = new TimelineMax();
+
+    var tl = new TweenMax.staggerFrom(".annee", 2, {
+        opacity: 0,     
+        x: -30,
+        ease: Expo.easeInOut,
+        delay: 2.5
+    }, 0.1);
+
+    var tl = new TweenMax.staggerFrom(".image", 2, {
+        opacity: 0,     
+        y: 100,
+        ease: Expo.easeInOut,
+        delay: 0.5
+    }, 0.1);
+
+
+
+
+
+
+  </script>
+  
+
+
+
+
+<!-- LANDING PAGE: APPARITION -->
+  <script>
+//__________________Reveal index__________________ 
+	$(function () {
+		var elements = $(".index-project, .grid-texte.two, .grid-texte.one, .titre, .index-contact, .index-about").toArray();
+		$(window).scroll(function () {
+			elements.forEach(function (item) {
+				if ($(this).scrollTop() >= $(item).offset().top - 500) {
+					$(item).addClass("reveal");
+				}
+			});
+		});
+		elements.forEach(function (item) {
+			if ($(this).scrollTop() >= $(item).offset().top - 500) {
+				$(item).addClass("reveal");
+			}
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
