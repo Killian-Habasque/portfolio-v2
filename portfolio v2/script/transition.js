@@ -25,10 +25,14 @@ lien.addEventListener('click' , function(event){
 lienclic = event.target.href;
 //On attend un peu que l'animation et se joue et on dirige vers le lien 
 setTimeout(function(){
-transition.classList.remove("active");
 window.location.href = lienclic;
 
 }, 400);
+
+setTimeout(function(){
+    transition.classList.remove("active");
+    
+    }, 1000);
 
 });
 }
