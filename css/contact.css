@@ -1,0 +1,147 @@
+
+/* TODO ______________________________________CONTACT______________________________________ */
+
+
+.section-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.section-contact h1 {
+    font-family: "HelveticaBold";
+    font-size: 110px;
+    letter-spacing: -5px;
+    line-height: 0.9;
+    transform: translate(-15px, 0);
+}
+
+.section-contact p {
+    font-family: "GrandSlang";
+    font-size: 25px;
+    margin-top: 40px;
+    text-decoration: underline;
+    color: transparent;
+    animation: reveal-text-opacity 2s ease 2s forwards;
+}
+.titre-contact {
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+.h1-contact {
+    position: relative;
+    color: black;
+}
+.h1-contact::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    right: -100px;
+    bottom: -3vh;
+    background: black;
+    transform: translate(-300px);
+    animation: reveal-element-width 2s ease 1.5s forwards;
+}
+@keyframes reveal-element-width {
+    from {
+        width: 0;
+        transform: translate(-300px);
+    }
+    to {
+        width: 230px;
+        transform: translate(0);
+    }
+}
+
+.h1-contact::after {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: -100px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    bottom: -3vh;
+    animation: reveal-element-scale 2s ease 0.3s forwards;
+    z-index: -1;
+}
+
+@keyframes reveal-element-scale {
+    from {
+        transform: scale(0);
+        border: 2px solid black;
+    }
+    to {
+        transform: scale(1);
+        border: 2px solid black;
+    }
+}
+
+.section-contact .reseaux {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.section-contact .reseau {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.section-contact .reseaux img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.section-contact::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 340px;
+    background: repeat url(../images/motif_plus.png);
+    background-size: auto;
+    background-size: cover;
+    left: 0;
+    bottom: 10vh;
+    animation: animation-opacity-translate 0.8s cubic-bezier(0.075, 0.82, 1, 1) 2s forwards;
+    transform: translate(-200px);
+    opacity: 0;
+}
+@keyframes animation-opacity-translate {
+    from {transform: translate(-200px); opacity: 0;}
+    to {transform: translate(0); opacity: 1;}
+  }
+
+/** ____________________500____________________*/
+@media screen and (max-width: 500px) {
+
+
+    .section-contact h1 {
+        font-size: 25vw;
+    }
+    .section-contact p {
+        font-size: 5vw;
+    }
+    .h1-contact::after {
+        width: 55vw;
+        height: 55vw;
+        left: -15vw;
+        bottom: -3vh;
+    }  
+    .section-contact::before {
+        content: none;
+    } 
+.illustration .description  {
+    flex-direction: column
+}
+
+  .name h1 {
+    font-family: 'GrandSlang';
+  }	
+	
+	
+}

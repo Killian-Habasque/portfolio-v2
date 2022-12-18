@@ -1,0 +1,134 @@
+
+
+/* TODO ______________________________________PAGE______________________________________ */
+
+
+
+.section-page {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.entete {
+    display: flex;
+}
+
+
+.entete .fleche {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-content: center;
+}
+.entete .fleche .cercle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    border: 2px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.entete .fleche .cercle img {
+    width: 100px;
+}
+.illustration {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.illustration .noir {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.illustration .noir img {
+    height: 100%;
+    object-fit: contain; 
+    transition: all 0.3s ease-in-out; 
+}
+.illustration .noir img:hover {
+    transform: scale(1.1);
+}
+.section-page h1, .section-page h2 {
+    font-family: "HelveticaBold";
+    font-size: 110px;
+    letter-spacing: -5px;
+    line-height: 1;
+    padding-right: 20px;
+}
+
+ .section-page h2 {
+    margin-top: -20px;
+}
+.section-page h3 {
+    font-family: 'Helvetica';
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.illustration .description  {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.illustration .description p {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+}
+.illustration .description h3 {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/** ____________________1000____________________*/
+@media screen and (max-width: 1000px) {
+    .illustration .noir img {
+        width: 100%;
+    }
+    .entete {
+        flex-direction: column;
+    }
+
+    .illustration {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+/** ____________________600____________________*/
+@media screen and (max-width: 600px) {
+
+    .section-page {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .section-page h1, .section-page h2 {
+        font-size: 19vw;
+    }
+    .section-page h2 {
+        margin-top: -2.5vw;
+    }
+
+    .illustration .noir {
+        height: 400px;
+    }
+}

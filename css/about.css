@@ -1,0 +1,576 @@
+
+/* TODO ______________________________________ABOUT______________________________________ */
+
+/** ____________________HEADER____________________*/
+
+.header-about a {
+    color: white;
+}
+
+.header-about {
+    animation: animation-border-header-about 0.7s ease-in-out 0.5s forwards;
+}
+@keyframes animation-border-header-about {
+    from {border-bottom: 2px solid transparent; margin-top: 10px;}
+    to {border-bottom: 2px solid white; margin-top: 0px;}
+  }
+
+/** ____________________RESPONSIVE MENU____________________*/
+.nav-container.about .menu-close, .nav-container.about .menu-item-link, .nav-container.about .menu-name  {
+    color: black;
+}
+.nav-container.about {
+    background: white;
+    color: white;
+}
+.nav-container.about  .menu-item-link:hover {
+    color: wheat;
+}
+.nav-container.about .bar-menu {
+    background: black;
+}
+.header-about .menu-open {
+    color: white;
+}
+
+
+/** ____________________ABOUT: LANDING PAGE____________________*/
+.body-about {
+    background: black;
+}
+
+.section-about {
+    height: 100vh;
+}
+
+
+.section-about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 25vh;
+}
+
+
+
+.zone-images-about {
+    height: 50vh;
+}
+
+
+.zone-images-about img { 
+    height: 100%;
+
+}
+
+.zone-images-about.one {
+    height: 70vh;
+    transform: rotate(-4deg);
+    z-index: 2;
+    margin-top: 30%;
+    margin-right: -5%;
+}
+
+.zone-images-about.two {
+    position: relative;
+    height: 60vh;
+
+}
+
+.texte-about h1 {
+    font-family: 'GrandSlang';
+    font-size: 200px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    bottom: -80px;
+}
+
+.info-perso {
+    display: flex;
+    justify-content: end;
+    color:white;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    gap: 50px;
+    margin-top: 120px;
+    line-height: 1.75;
+}
+
+
+/** ____________________ABOUT: PRESENTATION____________________*/
+
+.section-about-presentation {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.presentation {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.presentation h1::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 175px;
+    right: -5vw;
+    background: white;
+}
+
+
+.presentation h1 {
+    position: relative;
+    font-family: 'GrandSlang';
+    font-size: 100px;
+    font-weight: 100;
+    color:wheat;
+}
+
+
+.presentation p {
+    display: flex;
+    align-items: center;
+    font-family: 'Helvetica';
+    width: 40%;
+    max-width: 450px;
+    color:white;
+    line-height: 1.75;
+    
+}
+
+
+/** ____________________ABOUT: FORMATION____________________*/
+
+
+.formations {
+    width: 100%;
+    margin-top: 300px;
+}
+.formations h1 {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.formation  {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid white;
+    padding: 60px;
+}
+
+.formations .date {
+    font-family: 'GrandSlang';
+    font-size: 100px;
+    font-weight: 100;
+    color: white;
+} 
+.formations .titre {
+    font-family: 'GrandSlang';
+    font-size: 26px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+} 
+
+.formation.dut  {
+    display: grid;
+    justify-items: end;
+}
+.formation.bac  {
+    border-bottom: 2px solid white;
+}
+.formation.dut .titre  {
+    padding-right: 60px;
+}
+.formation.bac .titre  {
+    padding-left: 60px;
+}
+
+/** ____________________ABOUT: EXPERIENCE____________________*/
+
+
+.work-experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+.work-experience .titre {
+    display: flex;
+    align-self: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+.work {
+    align-self: center;
+    font-family: 'Helvetica';
+    font-size: 40px;
+    color: white;
+    font-weight: 1500;
+    letter-spacing: 10px;
+}
+.experience {
+    align-self: center;
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    color: wheat;
+    margin-top: -25px;
+}
+.jobs-grid {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    max-width: 600px;
+    gap: 20%;
+    margin-top: 100px;
+}
+.job {
+    font-family: 'HelveticaBold';
+    font-size: 15px;
+    font-weight: 800;
+}
+.job p {
+    font-family: 'Helvetica';
+    margin-top: 20px;
+    font-weight: 100;
+}
+.job h3 {
+    letter-spacing: 0.8px;
+}
+
+/** ____________________ABOUT: COMPETENCE____________________*/
+
+.competences {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.competences .titre {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+}
+
+.langages {
+    width: 100%;
+}
+
+
+.langages h2, .logiciels h2 {
+    justify-items: center;
+    display: grid;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 75px;
+}
+
+.langages-grid {
+    display: flex;
+    gap: 5%;
+    color: white;
+    margin-top: 25px;
+}
+
+
+.langage h3, .logiciel h3 {
+    font-family: 'GrandSlang';
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.langage p, .logiciel p {
+    font-family: 'Helvetica';
+    font-size: 15px;
+}
+
+
+
+.logiciels {
+    width: 100%;
+    margin-top: 50px;
+}
+.logiciels-grid {
+    color: white;
+    margin-top: 25px;
+    justify-items: center;
+    display: grid;
+}
+.logiciels-grid .bar {
+    height: 2px;
+    background: white;
+    align-self: flex-end;
+    width: 100px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.logiciel {
+    display: flex;
+    margin-bottom: 25px;
+}
+.logiciel h3 {
+    display: flex;
+    align-items: flex-end; 
+}
+.logiciel .bar {
+    width: 100px;
+    height: 2px;
+    background: white;
+    position: relative;
+}
+.logiciel p {
+    max-width: 500px;
+
+}
+
+
+/** ____________________ABOUT: CONTACT____________________*/
+
+
+.contact {
+    width: 100%;
+    margin-top: 300px;
+    height: 200px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.contact h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-family: 'HelveticaBold';
+    font-size: 30px;
+    letter-spacing: 0.7px;
+}
+
+
+.contact .cercle {
+    width: 200px;
+background: black;
+height: 200px;
+position: absolute;
+border-radius: 50%;
+border: 2px solid white;
+top: -1px;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.contact .fleche {
+    width: 80px;
+}
+
+.section-about-presentation .reseaux {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.section-about-presentation .reseaux img {
+    width: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    cursor: pointer;
+}
+
+
+
+/** ____________________1000____________________*/
+@media screen and (max-width: 1000px) {
+    .section-about {
+        height: auto;
+    }
+    .zone-images-about.one {
+        margin-bottom: -10%;
+        margin-right: 0;
+        margin-top: 10%;
+    }
+    .zone-images-about.two {
+        height: 55vh;
+        margin-top: 5vh;
+        z-index: 5;
+    }
+
+    .texte-about h1 {
+        font-size: 160px;
+        margin-top: -100px;
+        position: inherit;
+        text-align: center;
+    }
+
+    .info-perso {
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .info-perso p {
+        text-align: center;
+    }
+
+
+}
+
+/** ____________________800____________________*/
+@media screen and (max-width: 800px) {
+
+    .presentation {
+        flex-direction: column;
+    }
+    .presentation h1::after {
+        content: none;
+    }
+    .presentation h1 {
+        text-align: center;
+    }
+    .presentation p {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+
+    .competences .titre {
+        font-size: 4.2vw;
+    }
+
+    .langages {
+        display: flex;
+        flex-direction: column;
+    }
+    .langages-grid {
+        gap: 50px;
+        flex-direction: column;
+        align-self: center;
+        max-width: 200px;
+    }
+    .langage {
+        text-align: center;
+    }
+
+    .logiciel {
+        margin-bottom: 25px;
+        gap: 2vw;
+    }
+    .logiciel h3 {
+        align-items: flex-start;
+    }
+    .logiciel p {
+        max-width: 400px;
+    }
+
+    .logiciels-grid .bar {
+        display: none;
+    }
+
+
+
+    .contact h1 {
+        margin-top: -50px;
+        align-items: flex-start;
+    }
+}
+
+/** ____________________700____________________*/
+@media screen and (max-width: 700px) {
+
+
+    .formation.dut, .formation.bac  {
+        justify-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .formation.bac  {
+        display: grid;
+    }
+    .formation.dut .titre, .formation.bac .titre  {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .formations .date {
+        font-size: 15vw;
+    }
+    .formations .titre {
+        font-size: 4vw;
+    }
+
+
+
+    .jobs-grid {
+        flex-direction: column;
+        gap: 50px;
+        max-width: 200px;
+    }  
+    .job {
+        text-align: center;
+    }
+
+
+}
+
+
+
+/** ____________________600____________________*/
+@media screen and (max-width: 600px) {
+
+    .section-about-presentation {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .texte-about h1 {
+        font-size: 30vw;
+        margin-top: -20vw;
+    }
+
+
+    .work-experience {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .contact {
+        margin-top: 200px;
+    }
+    .formations {
+        margin-top: 200px;
+    }
+}
+
+

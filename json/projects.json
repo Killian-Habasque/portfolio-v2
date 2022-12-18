@@ -1,0 +1,113 @@
+
+{
+  "projects": [
+    {
+      "name": "C.O automatisation",
+      "date": 2019,
+      "category": "BRANDING, WEB DESIGN & INTEGRATION",
+      "type": "DESIGN & DEVWEB",
+      "status": "BAC",
+      "description": "CO Automatisation est un site qui a pour but d’automatiser la course d’orientation dans les lycées. Les papiers, les crayons et les balises avec poinçons sont donc retirés afin de laisser place à des lecteurs de clear code et d’un site mis en relation avec une base de données. Elle est composée d’une grande partie Back-end avec une gestion des courses (ajout, modification, balises, classes...), une gestion des profils en fonction des statuts (élèves, professeurs). La partie Front-end est composée essentiellement de l’affichage des données et de la présentation du projet. ",
+      "image": "images/projects/co.png",
+      "lien" : ""
+    },   
+    {
+      "name": "MMI Projects",
+      "date": 2020,
+      "category": "DESIGN",
+      "type": "DESIGN",
+      "status": "UNIVERSITY",
+      "description": "Vous pouvez retrouvez ci-dessus mes projets universitaires de la formation des métiers du multimédias et de l’internet.  ",
+      "image": "images/projects/mmi.png",
+      "lien" : "https://www.behance.net/killianhabasque"
+    }, 
+    {
+      "name": "Posters",
+      "date": 2020,
+      "category": "DESIGN",
+      "type": "DESIGN",
+      "status": "PERSONAL",
+      "description": "Durant mon temps libre, j’ai réalisé des affiches sur des événements ou monuments marquants. J’ai choisi de les représenter dans un style assez moderne et brutaliste.  ",
+      "image": "images/projects/posters.png",
+      "lien" : "https://www.behance.net/gallery/118477449/Posters-Projet-personnel"
+    }, 
+    {
+      "name": "Portfolio v1",
+      "date": 2020,
+      "category": "WEB DESIGN & INTEGRATION",
+      "type": "DESIGN & DEVWEB",
+      "status": "UNIVERSITY",
+      "description": "J’ai réalisé mon premier portfolio lors d’un projet universitaire. Nous n'avons le droit d’utiliser que du HTML/ CSS et du javascript vanilla.   ",
+      "image": "images/projects/portfolio.png",
+      "lien" : "https://www.behance.net/gallery/138694599/Design-development-portfolio-v1-web-MMI-Projects"
+    }, 
+    {
+      "name": "Auchan",
+      "date": 2021,
+      "category": "REBRANDING",
+      "type": "DESIGN",
+      "status": "PERSONAL",
+      "description": "Durant mon temps libre, j’ai réalisé la charte graphique de l’entreprise Auchan. On peut voir un rebranding totale de la marque avec la refonte du logo mais également sur les couleurs, la typographie, le webdesign et les divers produits de la marque. ",
+      "image": "images/projects/auchan.png",
+      "lien" : "https://www.behance.net/gallery/124122965/Auchan-supermarket-Logo-redesign"
+    },
+    {
+      "name": "Balado",
+      "date": 2021,
+      "category": "WEB DESIGN & INTEGRATION",
+      "type": "DESIGN & DEVWEB",
+      "status": "UNIVERSITY",
+      "description": "Balado est un site de podcast en ligne regroupant les 7 arts. Elle est composée d’une grande partie Back-end avec une gestion de podcast (ajout, modification, commentaires, favoris...), une gestion des profils en fonction des statuts (inconnu, connecté, administrateur). La partie Front-end est composée essentiellement de slider ou de menu burger. ",
+      "image": "images/projects/balado.png",
+      "lien" : "https://www.behance.net/gallery/138693815/Design-development-podcasts-site-MMI-Projects"
+    }, 
+    {
+      "name": "Monders",
+      "date": 2021,
+      "category": "BRANDING, WEB DESIGN & INTEGRATION",
+      "type": "DESIGN",
+      "status": "UNIVERSITY",
+      "description": "Monders est une web experience qui a pour but de faire découvrir les 7 merveilles du monde. Vous pouvez retrouver la charte graphique sur behance personnel et le webdesign sur mon compte universitaire.",
+      "image": "images/projects/monders.png",
+      "lien" : "https://www.behance.net/gallery/129608587/Monders-Logo-design"
+    }, 
+    {
+      "name": "PorscheKar",
+      "date": 2022,
+      "category": "WEB DESIGN & INTEGRATION",
+      "type": "DESIGN & DEVWEB",
+      "status": "PERSONAL",
+      "description": "Ce site est une web expérience qui a pour but de vous faire découvrir la Porsche 968 l’art de l’automobile. Il est actuellement en cours de développement.",
+      "image": "images/projects/kar.png",
+      "lien" : "https://www.behance.net/gallery/118471943/Porsche-Lart-de-lautomobile-Web-design-development"
+    }, 
+    {
+      "name": "BMW M3 model",
+      "date": 2022,
+      "category": "3D",
+      "type": "POSING & SHOOTING",
+      "status": "PERSONAL",
+      "description": "Cette vidéo a pour but de présenter la BMW M3 e30. Je suis partie d'un model 3D et je l'ai intégré dans un espace en ajoutant des lumières pour le rendre réaliste.",
+      "image": "images/projects/0106.png",
+      "lien" : "https://www.behance.net/gallery/118471165/Shooting-M3-E30-project-Posing-3D"
+    }, 
+    {
+      "name": "Portfolio v3",
+      "date": 2022,
+      "category": "WEB DESIGN & INTEGRATION",
+      "type": "DESIGN & DEVWEB",
+      "status": "PERSONAL",
+      "description": "Voici la nouvelle version de mon portfolio. Elle a été crée dans le but de se diversifier vers de nouvelles technologies comme par exemple Three.js. Le site est actuellement en cours de développement.",
+      "image": "images/projects/logo.svg",
+      "lien" : "https://killian-habasque-portfoliov3.netlify.app/"
+    }   
+      
+  ]
+}
+
+
+
+
+
+
+

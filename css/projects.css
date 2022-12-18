@@ -1,0 +1,367 @@
+
+/* TODO ______________________________________PROJECTS______________________________________ */
+
+
+/** ____________________RESPONSIVE MENU____________________*/
+.nav-container.project .menu-close, .nav-container.project .menu-item-link  {
+    color: white;
+}
+.nav-container.project {
+    background: black;
+    color: white;
+}
+.nav-container.project  .menu-item-link:hover {
+    color: wheat;
+}
+.nav-container.project .bar-menu {
+    background: white;
+}
+
+
+
+/** ____________________PROJECTS: LANDING____________________*/
+
+.section-projects {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.behance-texte {
+    font-size: 80px;
+    letter-spacing: 6px;
+    z-index: 5;
+    color: black;
+}
+
+.helv {
+    font-family: 'Helvetica';
+}
+
+.slang {
+    font-family: 'GrandSlang';
+}
+
+.behance-texte .bar {
+    font-family: 'Helvetica';
+    height: 2px;
+    background: black;
+    display: inline-block;
+    align-self: center;
+    font-size: 20px;
+    padding-left: 100px;
+    line-height: 2.5;
+    letter-spacing: 5px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom .helv {
+    margin-top: -5px;
+}
+
+.section-projects:after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    bottom: -10%;
+    left: 10%;
+    background: url(../images/motif.png);
+    background-size: 300px;
+    transform: translate(-100%);
+}
+
+.section-projects.reveal:after {
+    animation: reveal-element-translate-left 3s ease-in-out forwards;
+    transform: translate(0);
+
+}
+@keyframes reveal-element-translate-left {
+    from {
+        transform: translate(-200%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+
+.behance-button {
+    width: 150px;
+    height: 150px;
+    background: black;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.behance-button.on-focus2 * {
+    opacity: 0;
+
+}
+
+.behance-button i {
+    align-items: center;
+    display: flex;
+}
+
+
+
+.center-polygon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polygon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+#cta {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#cta .arrow {
+    left: 30%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: 15px;
+}
+
+.arrow.two {
+    margin-left: 8px;
+}
+
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes animationArrow {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.behance-button .arrow {
+    animation-name: animationArrow;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.behance-button .arrow.one {
+    animation-name: animationArrow;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+/** ____________________PROJECTS: EXEMPLES____________________*/
+
+body {
+    background: white;
+}
+
+.body-project {
+    background: wheat;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+
+}
+
+.location-project {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.num-project {
+    font-family: 'GrandSlang';
+    font-weight: 100;
+}
+
+.name-project {
+    font-family: 'GrandSlang';
+    font-size: 60px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.desc-project {
+    display: flex;
+    justify-content: center;
+    font-family: 'Helvetica';
+    letter-spacing: 2px;
+    color: black;
+}
+
+
+.project-preview-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 25vh;
+    z-index: -1;
+}
+
+.project-preview {
+    position: fixed;
+    align-items: center;
+    width: 0px;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.5;
+    animation: navAfter 10s linear infinite;
+}
+
+
+
+
+@keyframes navAfter {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    20% {
+        transform: translate(-10px, 10px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translate(20px, -20px);
+    }
+
+    60% {
+        transform: translate(-20px, 20px) rotate(2deg);
+    }
+
+    80% {
+        transform: translate(10px, -10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .project-preview-wrapper {
+        display: none;
+    }
+
+}
+
+
+/** ____________________800____________________*/
+@media screen and (max-width: 800px) {
+
+    .section-projects {
+        height: calc(100vh - 100px);
+    }
+   .behance-texte {
+        font-size: 9vw;
+        letter-spacing: 1vw;    
+    }  
+    .behance-texte .top, .behance-texte .bottom {
+        gap: 4vw; 
+    }  
+    .behance-texte .bar {
+        font-size: 2.5vw;
+        padding-left: 13vw;
+        letter-spacing: 1vw;
+    }
+    .behance-button {
+        width: 100px;
+        height: 100px;
+    }   
+    .section-projects::after {
+        left: 0;
+        width: 40vw;
+        height: 400px;
+    }
+
+
+
+    .name-project {
+        font-family: 'GrandSlang';
+        font-size: 9vw;
+        font-weight: 100;
+        word-break: break-word;
+        text-align: center;
+    }
+    .project-5 {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .desc-project,.num-project {
+        font-size: 5vw;
+    }
+    .num-project {
+        margin-right: 1vw;
+    }
+}
+
+
